@@ -1,5 +1,3 @@
-from config.token import TOKEN
-
 from handlers.user_handlers import user_register
 from handlers.admin_handlers import admin_register
 
@@ -8,7 +6,7 @@ from aiogram import Dispatcher, Bot
 
 
 async def main():
-    bot = Bot(token=TOKEN)
+    bot = Bot(token='TOKEN')
     dp = Dispatcher()
 
     admin_register(dp)

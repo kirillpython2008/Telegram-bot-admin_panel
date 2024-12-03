@@ -9,7 +9,7 @@ from aiogram.fsm.context import FSMContext
 
 
 async def admin_panel(message: types.Message):
-    if message.from_user.id == 5119363066:
+    if message.from_user.id == 'admin_id':
         await message.answer("Здравствуйте, товарищ админ, что прикажете ?",
                              reply_markup=admin_inline_keyboard)
     else:
